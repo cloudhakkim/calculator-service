@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>My Calculator</title>
+</head>
+<body>
+	<h1>My Calculator</h1>
+	<form method="post" action="sum">
+	<table>
+		<tr>
+			<td>Number 1</td>
+			<td/>
+			<td>Number 2</td>
+			<td/>
+			<td>Sum</td>
+		</tr>
+		<tr>
+			<td><input name="number1" type="number" step="any" th:value="${number1}"/></td>
+			<td>+</td>
+			<td><input name="number2" type="number" step="any" th:value="${number2}"/></td>
+			<td>=</td>
+			<td th:text="${sum}"></td>
+		</tr>
+	</table>
+	 <input type="submit" value="Add">
+	 </form>
+</body>
+</html>
