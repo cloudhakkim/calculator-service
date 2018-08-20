@@ -1,2 +1,2 @@
-# docker-repo
-Docker Repository
+# calculator-service
+Calculator Service
